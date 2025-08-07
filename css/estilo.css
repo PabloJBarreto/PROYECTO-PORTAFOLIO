@@ -42,7 +42,7 @@ body {
  
 /* Header */
 .header {
-  background-color: #82716e;
+  background-color: #252523;
   color: white;
   position: sticky;
   top: 0;
@@ -105,7 +105,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  height: 610px;
+  height: 715px;
   justify-content: center;
   /* animation: entrada-desde-abajo 0.6s ease-out forwards;  ver, no funciona
   opacity: 0;*/
@@ -118,3 +118,43 @@ body {
   line-height: 1.2;
 }
 
+/* Secciones */
+.sobremi,
+.portfolio,
+.contactame {
+  padding: 6rem 1rem;
+}
+
+/* Sobre Mí */
+
+.sobremi {
+  display: flex;
+  background-color:#4b6777;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 900px;
+  align-items: center;
+  background-color:#acb7ae;
+  border-radius: 12px;
+ }
+ 
+.contenedor img{
+  width: 462px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+       
+}
+
+.contenedor .info{
+  padding: 0 50px;
+  margin: 30px 0;
+  color: black;
+}
