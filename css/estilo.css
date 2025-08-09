@@ -226,7 +226,8 @@ max-width: 1200px;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: inherit;
+  font-family: inherit; 
+  color:grey;
 }
 
 .contactame-formulario button {
@@ -238,11 +239,12 @@ max-width: 1200px;
   cursor: pointer;
   padding: 1rem 2rem;
   transition: all 0.3s ease;
-  
+  font-family: inherit;
 }
 
 .contactame-formulario button:hover {
-  background-color: rgb(93, 92, 92);
+  background-color: #acb7ae;
+  color: #252523;
 transform: scale(1.01)
 }
 .social{
@@ -262,4 +264,12 @@ transform: scale(1.01)
 .social i:hover {
   color:#acb7ae;
   transform: scale(1.1)
+}
+
+/* Footer */
+.footer {
+  background-color: #252523;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
 }
