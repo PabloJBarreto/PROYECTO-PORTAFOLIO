@@ -271,7 +271,7 @@ transform: rotate(0) scale(1);
 }
 
 .contactame-info p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   font-size: 1.1rem;
   text-align: center;
 }
@@ -315,7 +315,7 @@ transform: scale(1.01)
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 4rem;
   transition: all 0.3s ease;
   cursor: pointer;
     
@@ -357,6 +357,20 @@ transform: scale(1.01)
   display: none;
 }
 
+.menu-toggle-checkbox:focus + .menu-toggle,
+.menu-toggle:focus {
+  outline: 2px solid #acb7ae;
+}
+
+.menu-toggle-checkbox:checked + .menu-toggle span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+.menu-toggle-checkbox:checked + .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle-checkbox:checked + .menu-toggle span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -5.5px);
+}
 
 /* Responsive */
 
@@ -397,21 +411,84 @@ transform: scale(1.01)
   .menu li:last-child {
     border-bottom: none;
   }
-}
-.menu-toggle-checkbox:focus + .menu-toggle,
-.menu-toggle:focus {
-  outline: 2px solid #acb7ae;
-}
-
-.menu-toggle-checkbox:checked + .menu-toggle span:nth-child(1) {
-  transform: rotate(45deg) translate(7px, 7px);
-}
-.menu-toggle-checkbox:checked + .menu-toggle span:nth-child(2) {
-  opacity: 0;
-}
-.menu-toggle-checkbox:checked + .menu-toggle span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -5.5px);
+.portfolio-tarjeta {
+   overflow:visible;
+  transition: none; 
+  pointer-events: none;
 }
 
+.portfolio-tarjeta img {
+  transform: none; 
+  filter:none;
+  transition:none; 
+ border-radius: 12px; 
+}
+
+.social{
+   font-size: 2rem;
+    
+}
+
+}
+
+/* ver si funciona */
 
 
+@media (min-width: 768px) {
+  .contenedor {
+    padding: 0 2rem;
+  }
+
+  .sobremi {
+    flex-direction: row;
+    text-align: left;
+    padding: 6rem 2rem;
+    gap: 4rem;
+  }
+
+  .sobremi-contenido {
+    flex: 1;
+  }
+
+  .sobremi-imagen {
+    flex: 1;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contactame-contenido {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .sobremi {
+    padding: 3rem 1rem;
+  }
+
+  
+  .portfolio,
+  .contactame {
+    padding: 3rem 1rem;
+  }
+
+  
+  .portfolio-tarjeta {
+    padding: 1.5rem;
+  }
+
+  .social{
+   font-size: 1.5rem;
+    
+}
+}
