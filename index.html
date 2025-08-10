@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Mozilla+Text:wght@200..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Text:wght@200..700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -20,6 +20,22 @@
     <header class="header">
       <nav class="nav">
         <div class="logo">PJBarr</div>
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          class="menu-toggle-checkbox"
+          aria-label="Abrir menú"
+        />
+        <label
+          for="menu-toggle"
+          class="menu-toggle"
+          tabindex="0"
+          aria-label="Abrir menú"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
         <ul class="menu">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#sobremi">Sobre Mí</a></li>
@@ -30,27 +46,27 @@
     </header>
     <section class="hero" id="inicio">
       <div class="hero-contenido">
-        <p class="hero-frase">Ver para creer, fotografiar para recordar</p>
+        <p class="hero-frase">Ver para creer,<br />fotografiar para recordar</p>
       </div>
     </section>
     <section class="sobremi" id="sobremi">
-      <div class="contenedor">
-        <div class="contenedor-sobremi">
-          <img src="./img/perfil.jpg" alt="foto Pablo Barreto" />
-          <div class="info">
-            <h1>Hola! Soy Pablo Barreto</h1>
-            <p class="Descripcion">
-              Apasionado de los viajes, los paisajes y la fotografía. Además de
-              siempre querer aprender cosas nuevas.
-              <br />
-              Soy de Isidro Casanova, tengo 34 años y actualmente estoy
-              adentrándome en el mundo del diseño web.
-              <br />
-              Este portfolio es mi primer proyecto.
-              <br /><br />
-              Bienvenido!
-            </p>
-          </div>
+      <div class="contenedor-sobremi">
+        <div class="sobremi-imagen">
+          <img src="./img/foto.jpg" alt="foto Pablo Barreto" />
+        </div>
+        <div class="info">
+          <h1>Hola! Soy Pablo Barreto</h1>
+          <p class="Descripcion">
+            Apasionado de los viajes, los paisajes y la fotografía. Además de
+            siempre querer aprender cosas nuevas.
+            <br />
+            Tengo 34 años, vivo en Isidro Casanova y actualmente estoy
+            adentrándome en el mundo del diseño web.
+            <br />
+            Este portfolio es mi primer proyecto.
+            <br /><br />
+            Bienvenido!
+          </p>
         </div>
       </div>
     </section>
