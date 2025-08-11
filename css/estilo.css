@@ -16,7 +16,7 @@ body {
   color: white;
   background-color:#4b6777;
   
-  
+   
 }
 .contenedor{
 max-width: 1200px;
@@ -88,6 +88,7 @@ border-bottom: 3px solid black;
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 .logo {
@@ -431,9 +432,6 @@ transform: scale(1.01)
 
 }
 
-/* ver si funciona */
-
-
 @media (min-width: 768px) {
   .contenedor {
     padding: 0 2rem;
@@ -446,7 +444,7 @@ transform: scale(1.01)
     gap: 4rem;
   }
 
-  .sobremi-contenido {
+  .info {
     flex: 1;
   }
 
@@ -472,23 +470,62 @@ transform: scale(1.01)
 }
 
 @media (max-width: 480px) {
-  .sobremi {
-    padding: 3rem 1rem;
+
+    .sobremi {
+    padding: 7rem 2rem;
+  }
+.info h1{
+  font-size: 20px;
+  
+}
+
+ .info p{
+  font-size: 15px;
+  
+}
+
+.info{
+  padding: 0 80px;
+  margin: 0 0;
+  
+}
+
+ .sobremi-imagen img{
+  width: 150px;
+    
+}
+
+
+
+   .portfolio{
+    padding: 8rem 0rem;
   }
 
+  .portfolio-grid {
+ 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
   
-  .portfolio,
-  .contactame {
-    padding: 3rem 1rem;
+.portfolio-tarjeta {
+    padding: 1.5rem 1rem;
   }
 
-  
-  .portfolio-tarjeta {
-    padding: 1.5rem;
+.contactame {
+    padding: 8rem 1rem;
   }
 
   .social{
-   font-size: 1.5rem;
-    
+   font-size: 1.5rem 2rem;
+   
 }
+.contactame-formulario {
+     gap: 0.5rem; 
+}
+.contactame-formulario input,
+.contactame-formulario textarea {
+  font-size: 0.75rem;
+
+}
+
 }
