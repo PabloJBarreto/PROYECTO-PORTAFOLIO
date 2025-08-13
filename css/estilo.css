@@ -11,10 +11,10 @@ html {
 }
 
 body {
-  font-family: "Montserrat", serif;
-  line-height: 1.4;
-  color: white;
-  background-color:#4b6777;
+  font-family: "Montserrat", serif!important;
+  line-height: 1.4!important;
+  color: white!important;
+  background-color:#4b6777!important;
   
    
 }
@@ -254,6 +254,27 @@ transform: rotate(0) scale(1);
   color:white;
   
 }
+/* Carrusel */
+.carrusel{
+  padding: 8rem 1rem;
+}
+
+.carousel-inner img {
+  width: auto;
+  height: 600px;
+  max-height: 600px;
+ object-fit: cover;
+ object-position: center center;
+ 
+  
+}
+
+.carousel-item{
+  height: 80vh;
+  
+  
+}
+
 
 /* Contactame */
 
@@ -285,7 +306,7 @@ transform: rotate(0) scale(1);
 
 .contactame-formulario input,
 .contactame-formulario textarea {
-  padding: 1rem;
+  padding: 0.5rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1rem;
@@ -511,7 +532,16 @@ transform: scale(1.01)
     padding: 1.5rem 1rem;
   }
 
-.contactame {
+.carrusel{
+  padding: 10rem 1rem;
+}
+
+.carousel-item{
+  height: 400vh;
+  min-height: 500px;
+ 
+}
+ .contactame {
     padding: 8rem 1rem;
   }
 
